@@ -76,13 +76,13 @@ def train(epoch_start, model, optimizer):
 
 			dataloader.set_description(
 				'Epoch: {6} | '
-				'LR: {7:.6f} | '
+				'LR: {7:.2e} | '
 				'Loss: {0:.3f} | '
-				'Avg. Loss: {3:.3f} | '
+				'Avg.Loss: {3:.3f} | '
 				'Loss_Att: {1:.3f} | '
-				'Avg Loss_Att: {4:.3f} | '
+				'Avg.Loss_Att: {4:.3f} | '
 				'Loss_CTC: {2:.3f} | '
-				'Avg Loss_CTC: {5:.3f}'.format(
+				'Avg.Loss_CTC: {5:.3f}'.format(
 					loss.item(),
 					loss_att.item(),
 					loss_ctc.item(),
